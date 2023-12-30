@@ -1,0 +1,35 @@
+n=4
+------------------------------
+Quartiles: [2.298509400362319, 3.0435470779816516, 3.74617133125]
+Most common distance: 2.44949
+Maximum distance: 5.09902
+Time to compute: 0.0 minutes
+
+
+
+n=5
+------------------------------
+Quartiles: [3.4318927375302666, 4.363545145323091, 5.168475132318105]
+Most common distance: 3.741657
+Maximum distance: 7.348469
+Time to compute: 0.01 minutes
+
+
+
+n=6
+------------------------------
+Quartiles: [4.744375810218449, 5.833623297807103, 6.780269734359212]
+Most common distance: 5.567764
+Maximum distance: 10.0
+Time to compute: 0.53 minutes
+
+
+
+n=7
+------------------------------
+Quartiles: [6.181129595650591, 7.395791168205197, 8.470952973431316]
+Most common distance: 7.483315
+Maximum distance: 12.767145
+Time to compute: 58.78 minutes
+
+
