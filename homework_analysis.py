@@ -100,7 +100,7 @@ def compute_weak_order_dists(weak_orders: List[List[Tuple]]) -> Counter:
     """
     num_dists = (len(weak_orders) * (len(weak_orders)+1))//2
     p = mp.Pool()
-    counts = p.imap(weak_order_list_dist, list(it.combinations_with_replacement(weak_orders, r=2)), chunksize=num_dists//os.cpu_count())
+    counts = p.imap(weak_order_list_dist, it.combinations_with_replacement(weak_orders, r=2), chunksize=num_dists//os.cpu_count())
     counts = ft.reduce(lambda x, y: x+y, counts)
     p.close()
     p.join()
@@ -173,7 +173,7 @@ def main():
     xs, ys = list(rel_freq.keys()), list(rel_freq.values())
     plt.title(f'Frequency of Distances Between Ranking Sequences ($n={n}$)')
     plt.xlabel('Distance')
-    plt.ylabel('Relative Requency')
+    plt.ylabel('Relative Frequency')
     plt.scatter(xs, ys, alpha=0.6)
     plt.xlim(left=0)
     plt.ylim(bottom=0)
